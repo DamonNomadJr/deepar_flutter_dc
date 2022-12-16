@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>DeepAR</title>
+    <style>
+        .thumb {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            opacity: 0.8;
+            transition: all 300ms ease;
+            height: 70px;
+        }
+
+        code {
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="deepar-canvas"></canvas>
+
+    <div>
+        <h3>Buttons</h3>
+        <p><code>InitializeDeepAR</code> is automatically is called you don't need to initialize again.</p>
+        <button onclick="initializeDeepar()">initializeDeepar</button>
+        <button onclick="changeParameterBool()">changeParameterBool</button>
+        <button onclick="changeParameterFloat()">changeParameterFloat</button>
+        <button onclick="changeParameterVector()">changeParameterVector</button>
+        <button onclick="clearEffect()">clearEffect</button>
+        <button onclick="downloadFaceTrackingModel()">downloadFaceTrackingModel</button>
+        <button onclick="fireTrigger()">fireTrigger</button>
+        <button onclick="moveGameObject()">moveGameObject</button>
+        <button onclick="pause()">pause</button>
+        <button onclick="processFrame()">processFrame</button>
+        <button onclick="processImage()">processImage</button>
+        <button onclick="changeParameterFloat()">changeParameterFloat</button>
+
+        <button onclick="startCamera()">VideoStart</button>
+        <button onclick="stopCamera()">VideoStop</button>
+        <button onclick="switchEffect()">switchEffect</button>
+
+    </div>
+
+    <div class="effect-carousel">
+        <h3>Official DeepAR Effects</h3>
+        <p>Multiple effects can be stacked on top of each other. They are recorded in <code>currentSlots</code></p>
+        <button class="effect-button"><img class="thumb" src="thumbs/viking.png"></button>
+        <button class="effect-button"><img class="thumb" src="thumbs/makeup.png"></button>
+        <button class="effect-button"><img class="thumb" src="thumbs/makeup-split.png"></button>
+        <button class="effect-button"><img class="thumb" src="thumbs/stallone.png"></button>
+        <button class="effect-button"><img class="thumb" src="thumbs/flower_face.png"></button>
+        <button class="effect-button"><img class="thumb" src="thumbs/galaxy.png"></button>
+        <button class="effect-button"><img class="thumb" src="thumbs/humanoid.png"></button>
+        <button class="effect-button"><img class="thumb" src="thumbs/devil_horns.png"></button>
+        <button class="effect-button"><img class="thumb" src="thumbs/ping_pong.png"></button>
+        <button class="effect-button"><img class="thumb" src="thumbs/pixel_hearts.png"></button>
+        <button class="effect-button"><img class="thumb" src="thumbs/snail.png"></button>
+        <button class="effect-button"><img class="thumb" src="thumbs/hope.png"></button>
+        <button class="effect-button"><img class="thumb" src="thumbs/vendetta.png"></button>
+        <button class="effect-button"><img class="thumb" src="thumbs/fire.png"></button>
+        <button class="effect-button"><img class="thumb" src="thumbs/elephant_trunk.png"></button>
+        <button onclick="clearEffect()"><img class="thumb" src="thumbs/clear.png"></button>
+    </div>
+
+    <script src="lib/js/helper.js"></script>
+    <script src="lib/js/channel.js"></script>
+
+</body>
+
+</html>
